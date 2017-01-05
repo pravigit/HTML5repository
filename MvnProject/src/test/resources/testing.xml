@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Yahoo">
+
+
+<test name="ts">
+<parameter name="browser" value="firefox"/>
+<classes>
+ <class name="Basics.ReTest"/>
+</classes>
+
+</test>
+
+
+  
+<test name="tst_retest_chrome">
+
+<parameter name="browser" value="chrome"/>
+
+<classes>
+<class name="Basics.ReTest"/>
+
+</classes>
+
+</test>
+
+
+<listeners>
+
+<listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+
+<listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+
+<listener class-name="atu.testng.reports.listeners.MethodListener"/>
+
+</listeners>
+
+</suite>
